@@ -5,10 +5,10 @@ const cover = document.getElementById('cover');
 const play = document.getElementById('play');
 const next = document.getElementById('next');
 const previous = document.getElementById('previous');
-const currentProgress = document.getElementById('current-progress')
-const progressContainer = document.getElementById('progress-container')
-const shuffleButton = document.getElementById('shuffle')
-const repeatButton =document.getElementById('repeat')
+const currentProgress = document.getElementById('current-progress');
+const progressContainer = document.getElementById('progress-container');
+const shuffleButton = document.getElementById('shuffle');
+const repeatButton = document.getElementById('repeat');
 
 const Oceans = {
     songName: 'Oceans',
@@ -28,6 +28,7 @@ const thisCharmingMan = {
 
 let isPlaying = false;
 let isShuffled = false;
+let repeatOn = false;
 const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
@@ -123,7 +124,23 @@ function shuffleButtonClicked() {
 }
 
 function repeatButtonClicked(){
-    
+    if (repeatOn === false){
+        repeatOn = true;
+        repeatButton.classList.add('button-active');
+    }
+    else {
+        repeatOn = false;
+        repeatButton.classList.remove('button-active');
+    }
+}
+
+function nextOrRepeat(){
+    if (repeatOn === false) {
+        nextSong();
+    }
+    else{
+        playSong();
+    }
 }
 
 initializeSong();
@@ -132,7 +149,7 @@ play.addEventListener('click',playPauseDecider);
 previous.addEventListener('click',previousSong);
 next.addEventListener('click',nextSong);
 song.addEventListener('timeupdate', updateProgressBar);
+song.addEventListener('ended',nextOrRepeat);
 progressContainer.addEventListener('click', jumpTo);
 shuffleButton.addEventListener('click', shuffleButtonClicked);
 repeatButton.addEventListener('click', repeatButtonClicked);
-
