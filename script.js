@@ -8,7 +8,7 @@ const previous = document.getElementById('previous');
 const currentProgress = document.getElementById('current-progress')
 const progressContainer = document.getElementById('progress-container')
 const shuffleButton = document.getElementById('shuffle')
-
+const repeatButton =document.getElementById('repeat')
 
 const Oceans = {
     songName: 'Oceans',
@@ -122,6 +122,10 @@ function shuffleButtonClicked() {
     }
 }
 
+function repeatButtonClicked(){
+    
+}
+
 initializeSong();
 
 play.addEventListener('click',playPauseDecider);
@@ -129,5 +133,6 @@ previous.addEventListener('click',previousSong);
 next.addEventListener('click',nextSong);
 song.addEventListener('timeupdate', updateProgressBar);
 progressContainer.addEventListener('click', jumpTo);
-shuffleButton.addEventListener('click', shuffleButtonClicked)
+shuffleButton.addEventListener('click', shuffleButtonClicked);
+repeatButton.addEventListener('click', repeatButtonClicked);
 
