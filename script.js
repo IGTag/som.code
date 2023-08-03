@@ -25,11 +25,18 @@ const thisCharmingMan = {
     artist : 'The Smiths',
     file : 'This_Charming_Man'
 };
+ 
+const ThemanWhoSoldTheWorld ={
+    songName: 'The Man Who Sold The World',
+    artist : 'David Bowie',
+    file : 'DAVIDBOWIE_THE_MAN_WHO_SOLD_THE_WORLD'
+}
+
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan];
+const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
