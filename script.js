@@ -15,28 +15,53 @@ const Oceans = {
     artist : 'Pearl Jam',
     file : 'Oceans'
 };
+
 const rappSnitchKnishes = {
     songName: 'Rapp Snitch Knishes',
     artist : 'MF DOOM',
     file : 'Rapp_Snitch_Knishes'
 };
+
 const thisCharmingMan = {
     songName: 'This Charming Man',
     artist : 'The Smiths',
     file : 'This_Charming_Man'
 };
- 
+
 const ThemanWhoSoldTheWorld ={
     songName: 'The Man Who Sold The World',
     artist : 'David Bowie',
     file : 'DAVIDBOWIE_THE_MAN_WHO_SOLD_THE_WORLD'
-}
+};
 
+const JDM={
+    songName: '151',
+    artist: 'Jedi Mind Tricks',
+    file: '151'
+};
+
+const Livinprayer ={
+    songName:"Livin'on A Prayer",
+    artist: 'Bon Jovi',
+    file: "Livin_On_A_Prayer"
+};
+
+const Pachinko ={
+    songName: "DᐳEᐳAᐳTᐳHᐳMᐳEᐳTᐳAᐳL",
+    artist: 'Pachinko',
+    file:   'DᐳEᐳAᐳTᐳHᐳMᐳEᐳTᐳAᐳL_',
+};
+
+const shesaidiwonder = {
+    songName:'She said, i wonder',
+    artist:'Kudasai',
+    file: 'she_said_i_wonder'
+}
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld];
+const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
