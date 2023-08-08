@@ -62,11 +62,26 @@ const seraparasempre = {
     artist:'Rodolfo Abrantes',
     file: 'O_DIA_QUE_SERA_PARA_SEMPRE'
 }
+const whyshouldi = {
+    songName:'Why Should I',
+    artist:'Bob Marley',
+    file: 'WHY_SHOULD_I'
+}
+const letjabepraised = {
+    songName:'Let Jah Be Praised',
+    artist:'Bob Marley',
+    file: 'LET_JAH_BE_PRAISED'
+}
+const couldyoubeloved = {
+    songName:'Could You Be Loved',
+    artist:'Bob Marley',
+    file: 'COULD_YOU_BE_LOVED'
+}
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre];
+const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
