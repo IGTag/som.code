@@ -96,7 +96,8 @@ const couldyoubeloved = {
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved];
+const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ?? 
+[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
@@ -242,8 +243,8 @@ function likeButtonClicked(){
         sortedPlaylist[index].liked = false;
     }
     LikeButtonRender();
+    localStorage.setItem('playlist', JSON.stringify(originalplaylist));
 }
-
 initializeSong();
 
 play.addEventListener('click',playPauseDecider);

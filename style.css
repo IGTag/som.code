@@ -46,8 +46,11 @@ button{
 
 #cover{
     width: 450px;
-}
+    border-style: solid;
+    border-width: white;
+    border-radius: 5px;
 
+}
 #playlist-title{
     display: flex;
     flex-direction: row;
