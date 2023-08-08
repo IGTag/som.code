@@ -57,11 +57,16 @@ const shesaidiwonder = {
     artist:'Kudasai',
     file: 'she_said_i_wonder'
 }
+const seraparasempre = {
+    songName:'O dia que será para sempre',
+    artist:'Rodolfo Abrantes',
+    file: 'O_DIA_QUE_SERA_PARA_SEMPRE'
+}
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder];
+const originalplaylist = [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
