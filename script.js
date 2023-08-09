@@ -92,12 +92,18 @@ const couldyoubeloved = {
     file: 'COULD_YOU_BE_LOVED',
     liked: false,
 }
+const FoolishOne = {
+    songName:'Foolish One',
+    artist:'Taylor Swift',
+    file: 'Taylor_Swift_Foolish_One',
+    liked: false,
+}
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
 const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ?? 
-[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved];
+[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
