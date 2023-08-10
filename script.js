@@ -12,6 +12,8 @@ const shuffleButton = document.getElementById('shuffle');
 const repeatButton = document.getElementById('repeat');
 const songTime = document.getElementById('song-time');
 const totalTime= document.getElementById('total-time');
+const audio = document.getElementById('audio');
+const volumeSlider = document.getElementById('volume');
 
 const Oceans = {
     songName: 'Oceans',
@@ -251,6 +253,11 @@ function likeButtonClicked(){
     LikeButtonRender();
     localStorage.setItem('playlist', JSON.stringify(originalplaylist));
 }
+function setVolume() {
+    const volumeValue = volumeSlider.value / 100; 
+    audio.volume = volumeValue;
+}
+    
 initializeSong();
 
 play.addEventListener('click',playPauseDecider);
@@ -262,4 +269,5 @@ song.addEventListener('loadedmetadata',updateTotalTime);
 progressContainer.addEventListener('click', jumpTo);
 shuffleButton.addEventListener('click', shuffleButtonClicked);
 repeatButton.addEventListener('click', repeatButtonClicked);
-likeButton.addEventListener('click',likeButtonClicked)
+likeButton.addEventListener('click',likeButtonClicked);
+volumeSlider.addEventListener('input', setVolume);
