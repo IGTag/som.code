@@ -13,6 +13,7 @@ const repeatButton = document.getElementById('repeat');
 const songTime = document.getElementById('song-time');
 const totalTime= document.getElementById('total-time');
 const volumeSlider = document.getElementById('volume');
+const audio = document.getElementById('audio');
 
 const Oceans = {
     songName: 'Oceans',
