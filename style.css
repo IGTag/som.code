@@ -103,6 +103,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    padding-right:5px ;
+    margin: none;
 }
 
 .volume_slider,
@@ -133,9 +136,9 @@ button{
 
 i.bi-volume-down{
     font-size: 2em;
-    padding: 1px;
+    
 }
 i.bi-volume-up{
     font-size: 2em;
-    padding: 5px;
+    
 }
