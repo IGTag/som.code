@@ -116,7 +116,9 @@ button{
     transition: none .2s;
 }
 .volume_slider::-webkit-slider-thumb,
-.mixer_volume::-webkit-slider-thumb{
+.mixer_volume::-webkit-slider-thumb {
+
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance:none;
