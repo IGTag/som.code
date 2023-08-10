@@ -97,3 +97,43 @@ button{
     font-size: smaller;
     margin-top: 0.5em;
 }
+
+
+.mixer_volumebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume_slider,
+.mixer_volume{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: rgb(139,153,156);
+    -webkit-transition: .2s;
+    transition: none .2s;
+}
+.volume_slider::-webkit-slider-thumb,
+.mixer_volume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid rgb(139,153,156);
+    cursor: pointer;
+    border-radius: 100%;
+
+}
+
+i.bi-volume-down{
+    font-size: 2em;
+    padding: 1px;
+}
+i.bi-volume-up{
+    font-size: 2em;
+    padding: 5px;
+}
