@@ -101,11 +101,25 @@ const FoolishOne = {
     liked: false,
 }
 
+const youngfolks = {
+    songName:'Young Folks',
+    artist:'Peter Bjorn and John',
+    file: 'Young_Folks',
+    liked: false,
+}
+
+const strangers = {
+    songName:'Strangers',
+    artist:'Albert Hammond Jr',
+    file: 'Strangers_',
+    liked: false,
+}
+
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ?? 
-[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne];
+const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ??
+[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne,youngfolks,strangers];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 

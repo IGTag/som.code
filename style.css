@@ -120,8 +120,7 @@ button{
 }
 .volume_slider::-webkit-slider-thumb,
 .mixer_volume::-webkit-slider-thumb {
-
-
+    
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance:none;
@@ -136,9 +135,7 @@ button{
 
 i.bi-volume-down{
     font-size: 2em;
-    
 }
 i.bi-volume-up{
     font-size: 2em;
-    
 }
