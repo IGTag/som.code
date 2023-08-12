@@ -129,12 +129,18 @@ const anighttogether = {
     liked: false,
 }
 
+const neurotic = {
+    songName:'Neurotic',
+    artist:'Boygem',
+    file: 'Neurotic',
+    liked: false,
+}
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
 const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ?? 
-[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne,youngfolks,strangers,proudofyou,anighttogether];
+[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne,youngfolks,strangers,proudofyou,anighttogether,neurotic];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
@@ -161,7 +167,7 @@ function playPauseDecider(){
     }
 }
 function initializeSong(){
-    cover.src = `imagens/${sortedPlaylist[index].file}.jpg`;
+    cover.src = `imagens/${sortedPlaylist[index].file}.jpg.`;
     song.src =  `songs/${sortedPlaylist[index].file}.mp3`;
     songName.innerText = sortedPlaylist[index].songName;
     bandName.innerText = sortedPlaylist[index].artist;
