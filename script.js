@@ -169,7 +169,6 @@ function playPauseDecider(){
 }
 function initializeSong(){
     cover.src = `imagens/${sortedPlaylist[index].file}.jpg`;
-    gif.src = `gifs/${sortedPlaylist[index].file}.gif`;
     song.src =  `songs/${sortedPlaylist[index].file}.mp3`;
     songName.innerText = sortedPlaylist[index].songName;
     bandName.innerText = sortedPlaylist[index].artist;
