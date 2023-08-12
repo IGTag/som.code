@@ -2,6 +2,7 @@ const songName = document.getElementById('song-name');
 const bandName = document.getElementById('band-name');
 const song = document.getElementById('audio');
 const cover = document.getElementById('cover');
+const gif = document.getElementById('gif');
 const play = document.getElementById('play');
 const next = document.getElementById('next');
 const previous = document.getElementById('previous');
@@ -132,7 +133,7 @@ const anighttogether = {
 const neurotic = {
     songName:'Neurotic',
     artist:'Boygem',
-    file: 'Neurotic',
+    file: 'neurotic',
     liked: false,
 }
 
@@ -167,7 +168,8 @@ function playPauseDecider(){
     }
 }
 function initializeSong(){
-    cover.src = `imagens/${sortedPlaylist[index].file}.jpg.`;
+    cover.src = `imagens/${sortedPlaylist[index].file}.jpg`;
+    gif.src = `gifs/${sortedPlaylist[index].file}.gif`;
     song.src =  `songs/${sortedPlaylist[index].file}.mp3`;
     songName.innerText = sortedPlaylist[index].songName;
     bandName.innerText = sortedPlaylist[index].artist;

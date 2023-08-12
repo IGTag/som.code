@@ -139,3 +139,10 @@ i.bi-volume-down{
 i.bi-volume-up{
     font-size: 2em;
 }
+#gif{
+width: 600px;
+border-style: solid;
+border-width: white;
+border-radius: 5px;
+margin-left: -0.89em;
+}
