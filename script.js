@@ -122,11 +122,19 @@ const proudofyou = {
     liked: false,
 }
 
+const anighttogether = {
+    songName:'A Night Together',
+    artist:'Kudasai',
+    file: 'A_Night_Together',
+    liked: false,
+}
+
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ?? [Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne,youngfolks,strangers,proudofyou];
+const originalplaylist = JSON.parse(localStorage.getItem('playlist')) ?? 
+[Oceans, rappSnitchKnishes, thisCharmingMan,ThemanWhoSoldTheWorld,JDM,Livinprayer,Pachinko,shesaidiwonder,seraparasempre,whyshouldi,letjabepraised,couldyoubeloved,FoolishOne,youngfolks,strangers,proudofyou,anighttogether];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
